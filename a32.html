@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doctor">
+        </div>
+        <div class="form-section">
+            <h2>Doctor Appointment Form</h2>
+            <form>
+                <label>Appointment Date
+                    <input type="date" required>
+                </label>
+
+                <label>Appointment Time
+                    <input type="time" required>
+                </label>
+
+                <label>Name</label>
+                <div class="name-inputs">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last" required>
+                </div>
+
+                <label>Gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <label>Phone
+                    <input type="tel" placeholder="123 456 7890" required>
+                </label>
+
+                <label>Address</label>
+                <div class="address-inputs">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+
+                <label>Your Query</label>
+                <textarea rows="3" placeholder="Write your query here..."></textarea>
+
+                <label>Appointment Type</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Cervix checkup</label>
+                    <label><input type="checkbox"> Heart checkup</label>
+                    <label><input type="checkbox"> Eye check-up</label>
+                    <label><input type="checkbox"> Hearing Test</label>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
